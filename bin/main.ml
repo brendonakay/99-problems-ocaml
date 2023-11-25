@@ -7,6 +7,8 @@ let () =
   let (module Problem : Problem.S ) =
     match problem with
     | "1" -> (module Problem1)
+    | "2" -> (module Problem2)
+    | "3" -> (module Problem3)
     | _ -> failwith "invalid day"
   in
   Problem.run
